@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f7f6fc;
+            color: #292544;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px #ddd;
+            z-index: 100;
+        }
+
+        header h2 {
+            color: #7557d9;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #39334f;
+            margin-left: 22px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #7557d9;
+        }
+
+        /* Home Section */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 60px 8%;
+            gap: 40px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin: 15px 0;
+        }
+
+        .hero-text h1 span {
+            color: #7557d9;
+        }
+
+        .hero-text p {
+            color: #77718c;
+            font-size: 18px;
+        }
+
+        .tagline {
+            color: #7557d9;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #7557d9;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #5239a9;
+            transform: translateY(-3px);
+        }
+
+        .profile-image {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #d9ceff, #f2dafa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7557d9;
+            font-size: 65px;
+            font-weight: bold;
+            border: 8px solid white;
+            box-shadow: 0 5px 25px #ddd;
+        }
+
+        section {
+            padding: 75px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #7557d9;
+        }
+
+        /* About Section */
+
+        .about {
+            background: white;
+            border-radius: 15px;
+            padding: 35px;
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #77718c;
+        }
+
+        /* Skills and Projects */
+
+        .skills-container,
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .skill,
+        .project {
+            background: white;
+            padding: 28px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 15px #e9e5f5;
+            transition: 0.3s;
+        }
+
+        .skill:hover,
+        .project:hover {
+            transform: translateY(-7px);
+        }
+
+        .skill h3,
+        .project h3 {
+            color: #7557d9;
+            margin-bottom: 10px;
+        }
+
+        .skill p,
+        .project p {
+            color: #77718c;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #77718c;
+        }
+
+        /* Responsive Design */
+
+        @media(max-width: 700px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 13px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 36px;
+            }
+
+            .profile-image {
+                width: 190px;
+                height: 190px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <h2>My Portfolio.</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Home Section -->
+
+    <div class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="tagline">
+                HELLO, WELCOME TO MY PROFILE!
+            </p>
+
+            <h1>
+                I'm <span>Suparna P Mogaveera</span>
+            </h1>
+
+            <h3>Aspiring Data Analyst</h3>
+
+            <p>
+                I am a student passionate about technology,
+                data analytics and problem-solving.
+
+                I enjoy exploring data and transforming
+                information into meaningful insights.
+            </p>
+
+            <a href="#about" class="btn">
+                Discover More
+            </a>
+
+        </div>
+
+        <div class="profile-image">
+            SP
+        </div>
+
+    </div>
+
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+
+            <p>
+                Hello! I am a student interested in Data Science
+                and Analytics. I am currently developing my skills
+                in Python, SQL, Excel, Statistics and Power BI.
+
+                <br><br>
+
+                I am particularly interested in Aviation Analytics
+                and Operations Analytics. My goal is to use
+                technology and data to solve real-world problems,
+                discover patterns and support better decisions.
+
+                <br><br>
+
+                I believe in continuous learning, creativity
+                and improving my technical skills through
+                practical projects.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Programming and data analysis.</p>
+            </div>
+
+            <div class="skill">
+                <h3>SQL</h3>
+                <p>Database management and querying.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Excel</h3>
+                <p>Data cleaning and analysis.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Statistics</h3>
+                <p>Understanding data and relationships.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Power BI</h3>
+                <p>Creating dashboards and visualizations.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <p>Learning predictive modelling techniques.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+
+                <h3>Student Performance Analysis</h3>
+
+                <p>
+                    Analyzing student performance using
+                    Python and Pandas.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Flight Delay Prediction</h3>
+
+                <p>
+                    Exploring flight delay patterns and
+                    predicting delay duration.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Data Visualization</h3>
+
+                <p>
+                    Creating meaningful visualizations
+                    and interactive dashboards.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 Your Name | Personal Portfolio</p>
+
+    </footer>
+
+</body>
+</html>
